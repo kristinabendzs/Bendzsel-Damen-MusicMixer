@@ -1,3 +1,13 @@
+/* Main Styling */
+
 .hidden {
     display: none;
 }
+
+.raleway-font {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+  }
+  
