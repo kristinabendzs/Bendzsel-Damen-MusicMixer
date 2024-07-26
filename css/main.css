@@ -9,5 +9,55 @@
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-  }
+}
+
+header {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    letter-spacing: 10px;
+    text-align: center;
+    background-color: #1b1b1b;
+    padding: 10px;
+    color: aliceblue;
+}
   
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px #000 solid;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+}
+
+#music-container {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px #000 solid;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#control-container {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px #000 solid;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+}
