@@ -18,19 +18,36 @@ header {
     text-align: center;
     background-color: #1b1b1b;
     padding: 10px;
-    color: aliceblue;
+    color: rgb(237, 184, 253);
 }
-  
+
+body {
+    background-color: #302f2f;
+}
+
+#text-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px rgb(237, 184, 253) solid;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 50px;
+}
+
 .box {
     width: 100px;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px #000 solid;
+    border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     overflow: hidden;
     margin: 10px;
+    background: rgb(255,154,143);
+    background: radial-gradient(circle, rgba(255,154,143,0.5942752100840336) 0%, rgba(76,0,142,1) 100%);
 }
 
 img {
@@ -38,16 +55,21 @@ img {
     height: 80%;
 }
 
+.img-small {
+    width: 60%;
+    height: 60%;
+}
+
 #music-container {
-    width: 25%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    border: 2px #000 solid;
+    border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin: 10px;
+    margin: 50px;
+    float: right;
 }
 
 #music-container img {
@@ -55,25 +77,28 @@ img {
 }
 
 #control-container {
-    width: 25%;
+    float: right;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    border: 2px #000 solid;
+    border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin: 10px;
+    margin: 50px;
 }
 
 .drop-board {
-    width: 30%;
-    border: 2px #000 solid;
-    border-radius: 3px;
+    float: right;
+    border: 2px rgb(237, 184, 253) solid;
+    border-radius: 30px;
     padding: 10px;
-    margin: 10px;
+    margin: 50px;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .left {
