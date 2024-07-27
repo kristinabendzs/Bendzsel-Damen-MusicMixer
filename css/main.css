@@ -30,7 +30,7 @@ header {
     border: 2px #000 solid;
     border-radius: 30px;
     overflow: hidden;
-    margin: 5px;
+    margin: 10px;
 }
 
 img {
@@ -50,6 +50,10 @@ img {
     margin: 10px;
 }
 
+#music-container img {
+    width: 80%;
+}
+
 #control-container {
     width: 25%;
     display: flex;
@@ -60,4 +64,26 @@ img {
     border-radius: 30px;
     padding: 10px;
     margin: 10px;
+}
+
+.drop-board {
+    width: 30%;
+    border: 2px #000 solid;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    background-color: red;
+}
+
+.middle {
+    background-color: blue;
+}
+
+.right {
+    background-color: orange;
 }
