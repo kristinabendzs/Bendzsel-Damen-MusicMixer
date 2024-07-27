@@ -11,69 +11,89 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-     <header>
+    <header>
         <h1>Music Mixer</h1>
     </header>
 
-    <section>
-        <h2 class="hidden">Music icons</h2>
-        <div id="music-container">
-            <div class="box">
-                <img src="images/bird-icon.svg" alt="bird sound icon">
-            </div>
+    <div id="text-box" class="grid-con">
+        <div>
+            <h2 class="hidden">music mixer intro and instructions</h2>
 
-            <div class="box">
-                <img src="images/bug-icon.svg" alt="bug sound icon">
-            </div>
-           
-            <div class="box">
-                <img src="images/cafe-icon.svg" alt="cafe sound icon">
-            </div>
+            <h3>welcome to our music mixer!</h3>
+            <p>Method 1 (float): This method floats the to the left within its containing block. Other content can flow around it on the right side.
 
-            <div class="box">
-                <img src="images/car-icon.svg" alt="traffic sound icon">
-            </div>
-         
-            <div class="box">
-                <img src="images/fire-icon.svg" alt="fire sound icon">
-            </div>
-        
-            <div class="box">
-                <img src="images/ocean-sound-icon.svg" alt="ocean sound icon">
-            </div>
-        
-            <div class="box">
-                <img src="images/rain-cloud-icon.svg" alt="rain sound icon">
-            </div>
-       
-            <div class="box">
-                <img src="images/storm-cloud-icon.svg" alt="thunder sound icon">
-            </div>
+            Method 2 (position: absolute): This method positions the absolutely relative to its containing block ( by default unless a parent container has position: relative).
+            
+            Method 3 (flexbox): Flexbox is a modern CSS layout model that makes it easy to align items within a container. By default, flex items are aligned to the start (left) of the flex container
+            </p>
         </div>
-    </section>
+    </div>
 
     <div>
-        <h2 class="hidden">sound control icons</h2>
 
-        <div id="control-container">
-            <div class="box">
-                <img src="images/play-button-icon.svg" alt="play button icon">
-            </div>
+        <div class="grid-con">
+            <h2 class="hidden">Music icons</h2>
+            <div id="music-container">
+                <div class="box">
+                    <img src="images/bird-icon.svg" alt="bird sound icon">
+                </div>
 
-            <div class="box">
-                <img src="images/rewind-button-icon.svg" alt="rewind button">
-            </div>
+                <div class="box">
+                    <img src="images/bug-icon.svg" alt="bug sound icon">
+                </div>
+            
+                <div class="box">
+                    <img src="images/cafe-icon.svg" alt="cafe sound icon">
+                </div>
 
-            <div class="box">
-                <img src="images/puase-button-icon.svg" alt="pause button">
+                <div class="box">
+                    <img src="images/car-icon.svg" alt="traffic sound icon">
+                </div>
+            
+                <div class="box">
+                    <img src="images/fire-icon.svg" alt="fire sound icon">
+                </div>
+            
+                <div class="box">
+                    <img src="images/ocean-sound-icon.svg" alt="ocean sound icon">
+                </div>
+            
+                <div class="box">
+                    <img src="images/rain-cloud-icon.svg" alt="rain sound icon">
+                </div>
+            
+                <div class="box">
+                    <img src="images/storm-cloud-icon.svg" alt="thunder sound icon">
+                </div>
             </div>
         </div>
 
-    </div>
-    <div class="drop-board">
-        <div class="drop-zone left box"></div>
-        <div class="drop-zone middle box"></div>
-        <div class="drop-zone right box"></div>
+        <div class="grid-con">
+            <h2 class="hidden">sound control icons</h2>
+
+            <div id="control-container">
+                <div class="box">
+                    <img class="img-small" src="images/play-button-icon.svg" alt="play button icon">
+                </div>
+
+                <div class="box">
+                    <img class="img-small" src="images/rewind-button-icon.svg" alt="rewind button">
+                </div>
+
+                <div class="box">
+                    <img class="img-small" src="images/puase-button-icon.svg" alt="pause button">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-con">
+            <h2 class="hidden">music drop zones</h2>
+            <div class="drop-board">
+                <div class="drop-zone left box"></div>
+                <div class="drop-zone middle box"></div>
+                <div class="drop-zone right box"></div>
+            </div>
+        </div>
     </div>
 
     <script src="js/main.js"></script>
