@@ -26,14 +26,9 @@ body {
 }
 
 #text-box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin: 50px;
 }
 
 .box {
@@ -68,8 +63,8 @@ img {
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin: 50px;
-    float: right;
+    margin-top: 15px;
+    background-color: #1b1b1b96;
 }
 
 #music-container img {
@@ -77,7 +72,6 @@ img {
 }
 
 #control-container {
-    float: right;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -85,20 +79,21 @@ img {
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin: 50px;
+    margin: 40px 50px;
+    background-color: #1b1b1b96;
 }
 
 .drop-board {
-    float: right;
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin: 50px;
+    margin: 0px 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #1b1b1b96;
 }
 
 .left {
