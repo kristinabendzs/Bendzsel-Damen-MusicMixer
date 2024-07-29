@@ -16,7 +16,8 @@
     </header>
 
     <main class="grid-con">
-        <section id="instructions" class="col-span-full raleway-font">
+      <div id="chunk-1" class="col-span-full">                          
+        <section id="instructions" class="raleway-font">
             <h2 class="hidden">Music mixer instructions</h2>
             <div id="text-box">
                 <h2>Welcome to Music Mixer!</h2>
@@ -27,63 +28,67 @@
                 </p>
             </div>
         </section>
+      </div>
 
-        <section id="music-icon-container"></section>
+
+            <section id="music-icon-container"></section>
             <h2 class="hidden">Music icons</h2>
             <audio id="audioElement" src="audio/cafe-ambience.mp3"></audio>
             <div id="music-container" class="col-start-1 col-end-5 m-col-start-6 m-col-end-13 l-col-start-9 l-col-end-13">
                 <div class="box">
                     <img data-trackref="morning-birds" src="images/bird-icon.svg" alt="bird sound icon" class="track-ref">
                 </div>
+                    <div class="box box-glow">
+                        <img src="images/bug-icon.svg" alt="bug sound icon">
+                    </div>
+                
+                    <div class="box box-glow">
+                        <img src="images/cafe-icon.svg" alt="cafe sound icon">
+                    </div>
 
-                <div class="box">
-                    <img src="images/bug-icon.svg" alt="bug sound icon">
+                    <div class="box box-glow">
+                        <img src="images/car-icon.svg" alt="traffic sound icon">
+                    </div>
+                
+                    <div class="box box-glow">
+                        <img src="images/fire-icon.svg" alt="fire sound icon">
+                    </div>
+                
+                    <div class="box box-glow">
+                        <img src="images/ocean-sound-icon.svg" alt="ocean sound icon">
+                    </div>
+                
+                    <div class="box box-glow">
+                        <img src="images/rain-cloud-icon.svg" alt="rain sound icon">
+                    </div>
+                
+                    <div class="box box-glow">
+                        <img src="images/storm-cloud-icon.svg" alt="thunder sound icon">
+                    </div>
                 </div>
-            
-                <div class="box">
-                    <img src="images/cafe-icon.svg" alt="cafe sound icon">
-                </div>
-
-                <div class="box">
-                    <img src="images/car-icon.svg" alt="traffic sound icon">
-                </div>
-            
-                <div class="box">
-                    <img src="images/fire-icon.svg" alt="fire sound icon">
-                </div>
-            
-                <div class="box">
-                    <img src="images/ocean-sound-icon.svg" alt="ocean sound icon">
-                </div>
-            
-                <div class="box">
-                    <img src="images/rain-cloud-icon.svg" alt="rain sound icon">
-                </div>
-            
-                <div class="box">
-                    <img src="images/storm-cloud-icon.svg" alt="thunder sound icon">
-                </div>
-            </div>
-
-        <section id="drop-zone-container" class="col-span-full">
+            </section>
+        </div>
+        
+        <section id="drop-zone-container" class="col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-9 l-col-end-13">
             <h2 class="hidden">music drop zones</h2>
-            <div class="drop-board col-start-1 col-end-5 m-col-start-6 m-col-end-13 l-col-start-9 l-col-end-13">
+            <div class="drop-board">
                 <div class="drop-zone left box"></div>
                 <div class="drop-zone middle box"></div>
                 <div class="drop-zone right box"></div>
             </div>
         </section>
+        
     
-        <section id="control-container" class="col-span-full">
-            <div class="box">
+        <section id="control-container" class="col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-9 l-col-end-13">
+            <div class="box box-glow">
                 <img class="img-small" src="images/play-button-icon.svg" alt="play button icon">
             </div>
 
-            <div class="box">
+            <div class="box box-glow">
                 <img class="img-small" src="images/rewind-button-icon.svg" alt="rewind button">
             </div>
 
-            <div class="box">
+            <div class="box box-glow">
                 <img class="img-small" src="images/puase-button-icon.svg" alt="pause button">
             </div>
         </section>
