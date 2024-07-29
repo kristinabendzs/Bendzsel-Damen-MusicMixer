@@ -27,7 +27,10 @@ function handleDrop() {
     }
 }
 
+function playSound
+
 //Event Listeners
 theIcons.forEach(icon => icon.addEventListener("dragstart", handeStartDrag));
 dropZone.forEach(zone => zone.addEventListener("dragover", handleOver));
 dropZone.forEach(zone => zone.addEventListener("drop", handleDrop));
+dropZone.forEach(zone => zone.addEventListener("drop", playSound));
