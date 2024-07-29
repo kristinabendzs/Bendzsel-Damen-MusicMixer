@@ -9,38 +9,45 @@
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
+    color: rgb(237, 184, 253);
 }
 
 header {
     font-family: "Raleway", sans-serif;
-    font-size: 30px;
-    letter-spacing: 10px;
-    text-align: center;
-    background-color: #1b1b1b;
-    padding: 10px;
-    color: rgb(237, 184, 253);
+    font-size: 24px;
+    letter-spacing: 6px;
+    background-color: rgb(237, 184, 253);
+    color: #5F1785;
 }
 
 body {
-    background-color: #302f2f;
+    margin: 0;
+    background-image: url('/images/background-1.png');
+    background-position: center;
 }
 
 #text-box {
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
+    margin-top: 20px;
+    background-color: #1b1b1b96;
+}
+
+#text-box h2 {
+    font-size: 30px;
 }
 
 .box {
     width: 100px;
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     overflow: hidden;
-    margin: 10px;
+    margin: 8px;
     background: rgb(255,154,143);
     background: radial-gradient(circle, rgba(255,154,143,0.5942752100840336) 0%, rgba(76,0,142,1) 100%);
 }
@@ -63,7 +70,7 @@ img {
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: #1b1b1b96;
 }
 
@@ -73,13 +80,14 @@ img {
 
 #control-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin: 40px 50px;
+    margin-top: 20px;
     background-color: #1b1b1b96;
 }
 
@@ -87,7 +95,7 @@ img {
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin: 0px 50px;
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
