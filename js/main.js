@@ -1,16 +1,27 @@
-console.log("JavaScript fileis linked");
+console.log("JavaScript file is linked");
 
 //Variables
 const theIcons = document.querySelectorAll("#music-container img");
 const dropBoard = document.querySelector(".drop-board");
 const dropZone = document.querySelectorAll(".drop-zone");
 const iconHolder = document.querySelector("#music-container");
+const audioElement = document.querySelector("#audioElement");
 let draggedIcon;
 
-//Functions
+function loadAudio(icon) {
+    let currentSrc = `audio/${icon.dataset.trackref}.mp3`;
+    audioElement.src = currentSrc;
+    audioElement.load();
+}
+
+function playSound() {
+    audioElement.play();
+}
+
+// Functions for drag & drop
 function handeStartDrag() {
     console.log(`started dragging ${this}`);
-    draggedPiece = this;
+    draggedIcon = this;
 }
 
 function handleOver(e) {
@@ -23,14 +34,18 @@ function handleDrop() {
         return;
     }
     else {
-        this.appendChild(draggedPiece);
+        this.appendChild(draggedIcon);
+        loadAudio(draggedIcon)
+        playSound();
     }
 }
 
-function playSound
+// Functions for audio
 
-//Event Listeners
+
+// Event Listeners
 theIcons.forEach(icon => icon.addEventListener("dragstart", handeStartDrag));
 dropZone.forEach(zone => zone.addEventListener("dragover", handleOver));
 dropZone.forEach(zone => zone.addEventListener("drop", handleDrop));
-dropZone.forEach(zone => zone.addEventListener("drop", playSound));
+
+
