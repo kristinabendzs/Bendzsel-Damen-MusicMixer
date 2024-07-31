@@ -4,19 +4,13 @@ console.log("JavaScript file is linked");
 const theIcons = document.querySelectorAll("#music-container img");
 const dropBoard = document.querySelector(".drop-board");
 const dropZone = document.querySelectorAll(".drop-zone");
-const iconHolder = document.querySelector("#music-container");
+const iconHolder = document.querySelectorAll("#music-container");
 const audioElement = document.querySelector("#audioElement");
+const playButton = document.querySelector(".playButton");
+const rewindButton = document.querySelector(".rewindButton");
+const pauseButton = document.querySelector(".pauseButton");
 let draggedIcon;
 
-function loadAudio(icon) {
-    let currentSrc = `audio/${icon.dataset.trackref}.mp3`;
-    audioElement.src = currentSrc;
-    audioElement.load();
-}
-
-function playSound() {
-    audioElement.play();
-}
 
 // Functions for drag & drop
 function handeStartDrag() {
@@ -35,17 +29,44 @@ function handleDrop() {
     }
     else {
         this.appendChild(draggedIcon);
-        loadAudio(draggedIcon)
-        playSound();
+        loadAudioPlaySound(draggedIcon, this);
     }
 }
 
-// Functions for audio
+// Functions for loading & playing audio
+function loadAudioPlaySound(icon, dropZone) {
+    let audioElement = document.createElement('audio');
+    let currentSrc = `audio/${icon.dataset.trackref}.mp3`;
+    audioElement.src = currentSrc;
+    audioElement.load();
+    audioElement.play();
+    dropZone.appendChild(audioElement);
+}
 
+// Functions for audio controls
+function playAudios() { 
+    const audioElements = document.querySelectorAll(".drop-zone audio");
+    audioElements.forEach(audio => audio.play()); 
+}
+
+function restartAudios() { 
+    const audioElements = document.querySelectorAll(".drop-zone audio");
+    audioElements.forEach(audio => {
+        audio.currentTime = 0;
+        audio.play();
+    })
+}
+
+function pauseAudios() { 
+    const audioElements = document.querySelectorAll(".drop-zone audio");
+    audioElements.forEach(audio => audio.pause());
+}
 
 // Event Listeners
 theIcons.forEach(icon => icon.addEventListener("dragstart", handeStartDrag));
 dropZone.forEach(zone => zone.addEventListener("dragover", handleOver));
 dropZone.forEach(zone => zone.addEventListener("drop", handleDrop));
-
-
+ 
+playButton.addEventListener("click", playAudios);
+rewindButton.addEventListener("click", restartAudios);
+pauseButton.addEventListener("click", pauseAudios);
