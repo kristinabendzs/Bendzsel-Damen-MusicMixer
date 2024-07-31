@@ -38,6 +38,9 @@
     margin-top: 250px; 
   }
 
+  #instructions {
+    margin-top: 20px;
+  }
 
   .m-col-span-full {grid-column: 1/-1;}
   .m-col-start-1 {grid-column-start: 1;}
@@ -89,6 +92,9 @@
     margin-left: 130px;
   }
 
+  #instructions {
+    margin-top: 20px;
+  }
 
   .l-col-span-full {grid-column: 1/-1;}
   .l-col-start-1 {grid-column-start: 1;}
