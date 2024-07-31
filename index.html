@@ -6,68 +6,90 @@
     <title>Music Mixer Project</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100. .900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <header class="grid-con">
-        <div class="col-span-full m-col-start-1"><h1>Music Mixer</h1></div>
+        <div class="col-span-full m-col-start-1"><h1>music mixer</h1></div>
     </header>
 
-    <main class="grid-con">
-        <div id="chunk-1" class="col-span-full">
-            <section id="instructions" class="raleway-font">
-                <h2 class="hidden">Music mixer instructions</h2>
-                <div id="text-box">
-                    <h2>Welcome to Music Mixer!</h2>
-                    <p>Mix and match a variety of calming sounds to create the perfect soundscape to study, sleep, and relax to!</p>
-                    <p>
-                    Simply drag and drop your preferred sounds into the empty track boxes below. Use the buttons to play/pause, rewind and control the volume on the various audio.<br>
-                    Enjoy mixing sounds!
-                    </p>
-                </div>
-            </section>
+    <div class="grid-con raleway-font">
+        <section id="instructions" class="col-span-full raleway-font">
+            <h2 class="hidden">Music mixer instructions</h2>
+            <div id="text-box">
+                <h2>Welcome to Music Mixer!</h2>
+                <p>Mix and match a variety of calming sounds to create the perfect soundscape to study, sleep, and relax to!</p>
+                <p>
+                Simply drag and drop your preferred sounds into the empty track boxes below. Use the buttons to play/pause, rewind and control the volume on the various audio. Enjoy mixing sounds!</p>
+            </div>
+        </section>
 
-            <section id="music-icon-container">
-                <h2 class="hidden">Music icons</h2>
-                <div id="music-container">
+        <section id="music-icon-container" class="col-span-full">
+            <h2 class="hidden">Music icons</h2>
+            <div id="music-container">
+                <div class="box-wrapper">
                     <div class="box box-glow">
                         <img src="images/bird-icon.svg" alt="bird sound icon">
                     </div>
+                    <h4>birds</h4>
+                </div>
 
+                <div class="box-wrapper">
                     <div class="box box-glow">
                         <img src="images/bug-icon.svg" alt="bug sound icon">
                     </div>
-                
+                    <h4>bugs</h4>
+                </div>
+
+                <div class="box-wrapper">
                     <div class="box box-glow">
                         <img src="images/cafe-icon.svg" alt="cafe sound icon">
                     </div>
+                    <h4>cafe</h4>
+                </div>
 
+                <div class="box-wrapper">
                     <div class="box box-glow">
                         <img src="images/car-icon.svg" alt="traffic sound icon">
                     </div>
-                
+                    <h4>traffic</h4>
+                </div>
+
+                <div class="box-wrapper">
                     <div class="box box-glow">
                         <img src="images/fire-icon.svg" alt="fire sound icon">
                     </div>
-                
+                    <h4>fire</h4>
+                </div>
+
+                <div class="box-wrapper">
                     <div class="box box-glow">
                         <img src="images/ocean-sound-icon.svg" alt="ocean sound icon">
                     </div>
+                    <h4>waves</h4>
+                </div>
                 
+                <div class="box-wrapper">
                     <div class="box box-glow">
                         <img src="images/rain-cloud-icon.svg" alt="rain sound icon">
                     </div>
-                
+                    <h4>rain</h4>
+                </div>
+
+                <div class="box-wrapper">
                     <div class="box box-glow">
                         <img src="images/storm-cloud-icon.svg" alt="thunder sound icon">
                     </div>
+                    <h4>storm</h4>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+    </div>
         
-        <section id="drop-zone-container" class="col-start-1 col-end-5 m-col-start-1 m-col-end-7 l-col-start-9 l-col-end-13">
+    <div class="grid-con">
+        <section id="drop-zone-container" class="col-span-full">
             <h2 class="hidden">music drop zones</h2>
             <div class="drop-board">
                 <div class="drop-zone left box"></div>
@@ -75,9 +97,10 @@
                 <div class="drop-zone right box"></div>
             </div>
         </section>
+    </div>
         
-    
-        <section id="control-container" class="col-start-1 col-end-5 m-col-start-7 m-col-end-13 l-col-start-9 l-col-end-13">
+    <div class="grid-con">
+        <section id="control-container" class="col-span-full">
             <div class="box playButton box-glow">
                 <img class="img-small" src="images/play-button-icon.svg" alt="play button icon">
             </div>
@@ -90,7 +113,7 @@
                 <img class="img-small" src="images/puase-button-icon.svg" alt="pause button">
             </div>
         </section>
-    </main>
+    </div>
 
     <script src="js/main.js"></script>
 </body>
