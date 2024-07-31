@@ -9,6 +9,7 @@ const audioElement = document.querySelector("#audioElement");
 const playButton = document.querySelector(".playButton");
 const rewindButton = document.querySelector(".rewindButton");
 const pauseButton = document.querySelector(".pauseButton");
+const volumeSlider = document.querySelector("#volumeControl");
 let draggedIcon;
 
 
@@ -62,6 +63,12 @@ function pauseAudios() {
     audioElements.forEach(audio => audio.pause());
 }
 
+function changeVolume() {
+    let volume = this.value/100;
+    const audioElements = document.querySelectorAll(".drop-zone audio");
+    audioElements.forEach(audio => audio.volume = volume);
+}
+
 // Event Listeners
 theIcons.forEach(icon => icon.addEventListener("dragstart", handeStartDrag));
 dropZone.forEach(zone => zone.addEventListener("dragover", handleOver));
@@ -70,3 +77,4 @@ dropZone.forEach(zone => zone.addEventListener("drop", handleDrop));
 playButton.addEventListener("click", playAudios);
 rewindButton.addEventListener("click", restartAudios);
 pauseButton.addEventListener("click", pauseAudios);
+volumeSlider.addEventListener("change", changeVolume);
