@@ -39,6 +39,12 @@
 
   #chunk-1 {
     display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  #control-container {
+    margin-top: 250px; 
   }
 
   #instructions {
@@ -48,6 +54,7 @@
   #hero-image {
     padding: 80px 0px;
   }
+
   .m-col-span-full {grid-column: 1/-1;}
   .m-col-start-1 {grid-column-start: 1;}
   .m-col-start-2 {grid-column-start: 2;}
@@ -95,11 +102,12 @@
   }
 
   #drop-zone-container {
-    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-top: 25px;
   }
 
-  #control-container {
-    margin-top: 30px;
+  #chunk-1 {
+    margin-top: 25px;
   }
 
   .l-col-span-full {grid-column: 1/-1;}
