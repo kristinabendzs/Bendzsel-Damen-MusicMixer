@@ -125,14 +125,6 @@ img {
     box-shadow: rgba(0, 0, 0, 0.783) 0px 54px 55px;
 }
 
-.left {
-    background-color: red;
-}
-
-.middle {
-    background-color: blue;
-}
-
-.right {
-    background-color: orange;
+#control-container div {
+    cursor: pointer;
 }
