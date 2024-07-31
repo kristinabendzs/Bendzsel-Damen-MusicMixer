@@ -20,8 +20,7 @@ July 31, 2024
 
 ## Credits
 Kristina Bendzenl and Meghan Damen.
-Sounds collected from PixaBay.
-Image collected from __. 
+Sounds and backgorund image collected from PixaBay.
 
 ## License
 MIT
