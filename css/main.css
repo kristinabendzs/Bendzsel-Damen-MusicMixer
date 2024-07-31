@@ -14,7 +14,7 @@
 
 header {
     font-family: "Raleway", sans-serif;
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: 6px;
     color: rgb(237, 184, 253);
     background-color: #100217;
@@ -37,19 +37,21 @@ body {
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: #1b1b1bbc;
     min-height: 240px;
+    color: rgb(237, 184, 253);
     box-shadow: rgba(0, 0, 0, 0.783) 0px 54px 55px;
 }
 
 #text-box h2 {
-    font-size: 30px;
-    padding-left: 20px;
+    font-size: 40px;
+    padding-left: 20px
 }
 
 #text-box p {
     padding-left: 20px;
+    font-size: 20px;
 }
 
 .box {
@@ -83,18 +85,32 @@ img {
 #music-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin-top: 20px;
+    padding-top: 20px;
+    margin-top: 30px;
     background-color: #1b1b1b96;
     box-shadow: rgba(0, 0, 0, 0.783) 0px 54px 55px;
 }
 
 #music-container img {
     width: 80%;
+}
+
+#music-container div {
+    cursor: pointer;
+}
+
+.box-wrapper {
+    text-align: center;
+    color: rgb(237, 184, 253);
+}
+
+.box-wrapper h4 {
+    padding-bottom: 3px;
+    margin-top: 0;
 }
 
 #control-container {
@@ -106,7 +122,7 @@ img {
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: #1b1b1b96;
     box-shadow: rgba(0, 0, 0, 0.783) 0px 54px 55px;
 }
@@ -115,7 +131,7 @@ img {
     border: 2px rgb(237, 184, 253) solid;
     border-radius: 30px;
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -128,3 +144,4 @@ img {
 #control-container div {
     cursor: pointer;
 }
+
